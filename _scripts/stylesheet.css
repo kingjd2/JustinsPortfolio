@@ -30,10 +30,16 @@ h1 {
 	font-family: Futura,Arial, Helvetica, sans-serif;
 	font-size: 50px; 
 	text-align: center;
+	padding: 0px;
+	margin:0px;
 }
 h2 {
 	text-align: center;
 	font-family: Georgia, "Times New Roman", Times, serif;
+	margin:0 24px;
+	font-size: 16px; 
+	padding: 4px;
+	display: inline-block;
 }
 h3 {
     margin: 0;
@@ -41,4 +47,28 @@ h3 {
 }
 p {
 	text-align:justify
+}
+a.fancybox.thumb {
+	margin:2px;
+	display: inline-block;
+	/*-moz-box-shadow: 0 0 10px #000;
+	-webkit-box-shadow: 0 0 10px #000;
+	box-shadow: 2px 2px 10px #000;*/
+}
+a.fancybox.thumb img:hover {
+	/*-moz-box-shadow: 0 0 10px #000;
+	-webkit-box-shadow: 0 0 10px #000;
+	box-shadow: 0px 0px 10px #fff;*/
+}
+div.stills {
+	max-width: 1000px;
+	margin: auto;
+}
+div.content {
+	max-width: 810px;
+	margin: auto;
+}
+div.header {
+	    margin: 0 60 60 60px;
+    padding:0;
 }

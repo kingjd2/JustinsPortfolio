@@ -20,32 +20,61 @@
 <script type="text/javascript" src="/_scripts/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 </head>
-
 <body>
-<h1>JUSTIN W. KING PHOTOGRAPHY</h1>
-<table width="618" height="52" border="0" align="center">
-  <tr>
-    <td><h2><a href="still.html" id="currentlink">STILL</a></h2></td>
-    <td><h2><a href="motion.html">MOTION</a></h2></td>
-    <td><h2><a href="about.html">ABOUT</a></h2></td>
-    <td><h2><a href="contact.html">CONTACT</a></h2></td>
-  </tr>
-</table>
+<h1><a href="index.html">JUSTIN W. KING PHOTOGRAPHY</h1>
+<div class="header">
+  <h2><a href="still.html" id="currentlink">STILL</a></h2>
+  <h2><a href="motion.html">MOTION</a></h2>
+  <h2><a href="about.html">ABOUT</a></h2>
+  <h2><a href="contact.html">CONTACT</a></h2>
+</div>
 
-<a class="fancybox" rel="group" href="_images/1_b.jpg"><img src="_images/1_s.jpg" alt="" width="200" /></a>
 
+<div class="stills">
+  <a class="fancybox thumb" rel="group" href="/_images/P1080009-Edit.jpg" title="Model: Anastasia Bondareva <br> Makeup: Gil Aldrin"><img src="/_images/P1080009-Edit-thumb.jpg" alt="" width="200" /></a>
+  <!--  <a class="fancybox thumb" rel="group" href="/_images/717-15A.jpg" title="Model: Anastasia Bondareva <br> Makeup: Gil Aldrin"><img src="/_images/717-15A-thumb.jpg" alt="Model: Anastasia Bondareva" width="200" /></a>                
+  <a class="fancybox thumb" rel="group" href="/_images/P1080042-Edit.jpg" title="Model: Anastasia Bondareva <br> Makeup: Gil Aldrin"><img src="/_images/P1080042-Edit-thumb.jpg" alt="" width="200" /></a>-->
+
+  
+
+  <a class="fancybox thumb" rel="group" href="/_images/719-13.jpg" title="Model: Emily Bogner<br> Makeup & Hair: Trexy Ching <br> Wardrobe: LBV Closet"><img src="/_images/719-13-thumb.jpg" alt="" width="200" /></a>
+    <a class="fancybox thumb" rel="group" href="/_images/P1070869-Edit.jpg" title="Model: Emily Bogner<br> Makeup & Hair: Trexy Ching <br> Wardrobe: LBV Closet"><img src="/_images/P1070869-Edit-thumb.jpg" alt="" width="200" /></a>
+ <a class="fancybox thumb" rel="group" href="/_images/P1070768-Edit.jpg" title="Model: Emily Bogner<br> Makeup & Hair: Trexy Ching <br> Wardrobe: LBV Closet"><img src="/_images/P1070768-Edit-thumb.jpg" alt="" width="200" /></a>
+ 
+ <!--    <a class="fancybox thumb" rel="group" href="/_images/719-05.jpg" title="Model: Emily Bogner<br> Makeup & Hair: Trexy Ching <br> Wardrobe: LBV Closet"><img src="/_images/719-05-thumb.jpg" alt="" width="200" /></a>
+  <a class="fancybox thumb" rel="group" href="/_images/P1070772-Edit.jpg" title="Model: Emily Bogner<br> Makeup & Hair: Trexy Ching <br> Wardrobe: LBV Closet"><img src="/_images/P1070772-Edit-thumb.jpg" alt="" width="200" /></a>
+  <a class="fancybox thumb" rel="group" href="/_images/P1070812-Edit.jpg" title="Model: Emily Bogner<br> Makeup & Hair: Trexy Ching <br> Wardrobe: LBV Closet"><img src="/_images/P1070812-Edit-thumb.jpg" alt="" width="200" /></a>
+  <a class="fancybox thumb" rel="group" href="/_images/P1070847-Edit-Edit.jpg" title="Model: Emily Bogner<br> Makeup & Hair: Trexy Ching <br> Wardrobe: LBV Closet"><img src="/_images/P1070847-Edit-Edit-thumb.jpg" alt="" width="200" /></a>
+-->
+  
+ 
+  <a class="fancybox thumb" rel="group" href="/_images/P1080234-Edit.jpg" title="Model: Krystal Ballantyne"><img src="/_images/P1080234-Edit-thumb.jpg" alt="" width="200" /></a>
+  <a class="fancybox thumb" rel="group" href="/_images/P1080395-Edit.jpg" title="Model: Krystal Ballantyne"><img src="/_images/P1080395-Edit-thumb.jpg" alt="" width="200" /></a>
+<!--   <a class="fancybox thumb" rel="group" href="/_images/P1080117-Edit.jpg" title="Model: Krystal Ballantyne"><img src="/_images/P1080117-Edit-thumb.jpg" alt="" width="200" /></a>-->
+
+  <a class="fancybox thumb" rel="group" href="/_images/P1050132-Edit.jpg" title="Model: Sparkle Sharday"><img src="/_images/P1050132-Edit-thumb.jpg" alt="" width="200" /></a>
+  <a class="fancybox thumb" rel="group" href="/_images/P1050305-Edit.jpg" title="Model: Sparkle Sharday"><img src="/_images/P1050305-Edit-thumb.jpg" alt="" width="200" /></a>    
+    <!--<a class="fancybox thumb" rel="group" href="/_images/P1050165-Edit.jpg" title="Model: Sparkle Sharday"><img src="/_images/P1050165-Edit-thumb.jpg" alt="" width="200" /></a> -->           
+</div>
+                
 <script type="text/javascript">
 	$(document).ready(function() {
-		$(".fancybox").fancybox();
+$(".fancybox").fancybox({
+    beforeShow : function() {
+        var alt = this.element.find('img').attr('alt');
+        this.inner.find('img').attr('alt', alt);  
+        this.title = alt;
+    }
+});
+$(".fancybox").fancybox({
+	helpers : {
+        overlay:{
+            css:{'background':'rgba(0,0,0,0.95)'}
+        }
+    }
+});
 	});
 </script>
 
-<a class="fancybox" rel="group" href="_images/1_b.jpg">a<img src="_images/1_s.jpg" alt="" width="200" /></a><a class="fancybox" rel="group" href="_images/1_b.jpg">a<img src="_images/1_s.jpg" alt="" width="200" />a</a><a class="fancybox" rel="group" href="_images/1_b.jpg"><img src="_images/1_s.jpg" alt="" width="200" /></a><a class="fancybox" rel="group" href="_images/1_b.jpg">a<img src="_images/1_s.jpg" alt="" width="200" /></a>
-
-<a class="fancybox" rel="group" href="_images/1_b.jpg">a<img src="_images/1_s.jpg" alt="" width="200" /></a><a class="fancybox" rel="group" href="_images/1_b.jpg">a<img src="_images/1_s.jpg" alt="" width="200" />a</a><a class="fancybox" rel="group" href="_images/1_b.jpg"><img src="_images/1_s.jpg" alt="" width="200" /></a><a class="fancybox" rel="group" href="_images/1_b.jpg">a<img src="_images/1_s.jpg" alt="" width="200" /></a>
-
-<a class="fancybox" rel="group" href="_images/1_b.jpg">a<img src="_images/1_s.jpg" alt="" width="200" /></a><a class="fancybox" rel="group" href="_images/1_b.jpg">a<img src="_images/1_s.jpg" alt="" width="200" />a</a><a class="fancybox" rel="group" href="_images/1_b.jpg"><img src="_images/1_s.jpg" alt="" width="200" /></a><a class="fancybox" rel="group" href="_images/1_b.jpg">a<img src="_images/1_s.jpg" alt="" width="200" /></a>
-
-<a class="fancybox" rel="group" href="_images/1_b.jpg">a<img src="_images/1_s.jpg" alt="" width="200" /></a><a class="fancybox" rel="group" href="_images/1_b.jpg">a<img src="_images/1_s.jpg" alt="" width="200" />a</a><a class="fancybox" rel="group" href="_images/1_b.jpg">
 </body>
 </html>
